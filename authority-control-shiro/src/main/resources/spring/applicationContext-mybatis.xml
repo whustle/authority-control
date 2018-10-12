@@ -62,12 +62,12 @@
 
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <property name="dataSource" ref="dataSource"></property>
+        <property name="dataSource" ref="dataSource"/>
         <!-- 引入 mybatis 配置文件 -->
-        <property name="configLocation" value="classpath:mybatis/SqlMapConfig.xml"></property>
-         <property name="typeAliasesPackage" value="com.light.ac.domain"></property>
+        <property name="configLocation" value="classpath:mybatis/SqlMapConfig.xml"/>
+         <property name="typeAliasesPackage" value="com.light.ac.domain"/>
         <!-- sql配置文件 -->
-         <property name="mapperLocations" value="classpath:mybatis/mapper/*.xml"></property>
+         <property name="mapperLocations" value="classpath:mybatis/mapper/*.xml"/>
          <!-- 分页插件 -->
          <property name="plugins">
 	        <array>
@@ -88,8 +88,8 @@
 
     <!-- 扫描Mapper -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.light.ac.mapper"></property>
-        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+        <property name="basePackage" value="com.light.ac.mapper"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
     
     <!-- 通用 Mapper -->

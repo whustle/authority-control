@@ -3,6 +3,11 @@
 <!DOCTYPE html>
 <html lang="zh">
 	<head>
+		<%
+			String path=request.getContextPath();
+			String basePath=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path;
+		%>
+		<base href="<%=basePath%>">
 		<meta charset="utf-8" />
 		<title>权限管理系统</title>
 		<meta name="keywords" content="Bootstrap模版,Bootstrap模版下载,Bootstrap教程,Bootstrap中文" />
