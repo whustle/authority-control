@@ -7,6 +7,7 @@
 					http://www.springframework.org/schema/context
                     http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
+
 	<!-- Shiro 的Web过滤器 -->
 	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
 		<property name="securityManager" ref="securityManager" />
